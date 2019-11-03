@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+
+<head>
+	<meta charset="utf-8">
+	<title>Portfolio Wojciech Andrzejewski</title>
+	<!-- tutaj podpinam pliki css bootstrap -->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css" media="all">
+	<!--tutaj podpinam lightbox -->
+	<link rel="stylesheet" href="css/lightbox.css">
+</head>
+
+<body>
+	<!-- navbar -->
+	<nav class="navbar navbar-expand-lg fixed-top">
+		<a class="navbar-brand" href="#">Home</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+			aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav mr-4">
+				<li class="nav-item">
+					<a class="nav-link" data-value="about" href="#">O mnie</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" data-value="portfolio" href="#">Portfolio</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" data-value="kontakt" href="#">Skontaktuj się</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	<!-- header -->
+	<header class="header ">
+		<div class="overlay"></div>
+		<div class="container">
+			<div class="description col-lg-6 col-sm-12">
+				<h2>
+					Witam na stronie mojego portfolio
+					<p>
+						Poniżej przedstawiam moje prace w zakresie grafiki, UI i UX designu, architektury i architektury
+						wnętrz.</p>
+					<button class="btn btn-outline-dark btn-lg">ZOBACZ</button>
+				</h2>
+			</div>
+			<div class="logo col-lg-6 col-sm-12">
+				<img src="images/logo-wa.png" class="img-fluid">
+			</div>
+		</div>
+	</header>
+	<!-- sekcja o mnie -->
+	<div class="about" id="about">
+		<div class="container-fluid">
+			<h1 class="text-center">O mnie</h1>
+			<div class="row">
+				<div class="col-lg-4 col-sm-12">
+					<img src="images/foto.jpg" class="img-fluid">
+				</div>
+				<div class="col-lg-8 col-sm-12 opis">
+					<h3>Wojciech Andrzejewski</h3>
+					<p>
+						Jestem osobą ambitną. W pracy zawodowej
+						najbarddziej lubię poczucie że się rozwijam.
+						Dlatego po osiągnięciu samodzielności w profesji
+						architekta i projektanta wnętrz postanowiłem, że czas na
+						przebranżowienie. Zarówno podczas studiów, jak i pracy
+						zawodowej przyszło mi poznać działanie dziesiątek
+						programów do grafiki i projektowania i obecnie wykorzystuję tę wiedzę w nauce UX/UI designu.
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- portfolio -->
+	<div>
+		<div class="container fluid portfolio"  id="portfolio" >
+			<h1 class="text-center">Moje projekty</h1>
+			<div class="row siatka">
+				<div
+					class="col-md-6 col-sm-6 col-12 pt-4 hover">
+					<div>
+						<a href="images/placeholder3.jpg" data-lightbox="example-set"
+							data-title="Lorem Ipsum is simply dummy the when an unknown galley of type and scrambled it to make a type specimen.">
+							<figure>
+								<img src="images/placeholder3.jpg" alt=" " class="img-fluid" />
+							</figure>
+						</a>
+					</div>
+				</div>
+				<div class="col-md-6 col-sm-6 col-12 pt-4 hover">
+					<div>
+						<a href="images/placeholder2.jpg" data-lightbox="example-set"
+							data-title="Lorem Ipsum is simply dummy the when an unknown galley of type and scrambled it to make a type specimen.">
+							<figure>
+								<img src="images/placeholder2.jpg" alt=" " class="img-fluid" />
+							</figure>
+						</a>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6 col-12 pt-4 hover">
+					<div>
+						<a href="images/ui.jpg" data-lightbox="example-set"
+							data-title="Lorem Ipsum is simply dummy the when an unknown galley of type and scrambled it to make a type specimen.">
+							<figure>
+								<img src="images/ui.jpg" alt=" " class="img-fluid" />
+							</figure>
+						</a>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6 col-12 pt-4 hover">
+					<div>
+						<a href="images/placeholder1.png" data-lightbox="example-set"
+							data-title="Lorem Ipsum is simply dummy the when an unknown galley of type and scrambled it to make a type specimen.">
+							<figure>
+								<img src="images/placeholder1.png" alt=" " class="img-fluid" />
+							</figure>
+						</a>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<div class="col-lg-3 col-md-6 col-12 pt-4 hover">
+					<div>
+						<a href="images/placeholder4.png" data-lightbox="example-set"
+							data-title="Lorem Ipsum is simply dummy the when an unknown galley of type and scrambled it to make a type specimen.">
+							<figure>
+								<img src="images/placeholder4.png" alt=" " class="img-fluid" />
+							</figure>
+						</a>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6 col-12 pt-4 hover">
+					<div>
+						<a href="images/placeholder5.png" data-lightbox="example-set"
+							data-title="Lorem Ipsum is simply dummy the when an unknown galley of type and scrambled it to make a type specimen.">
+							<figure>
+								<img src="images/placeholder5.png" alt=" " class="img-fluid" />
+							</figure>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+	<!-- kontakt-->
+	<div class="kontakt" id="kontakt">
+		<div class="container formularz">
+			<form>
+				<div class="row">
+					<div class="text-center col-sm-12">
+						<h1>Skontaktuj się ze mną</h1>
+					</div>
+					<div class="right col-sm-12">
+						<div class="form-group">
+							<input type="text" class="form-control form-control-lg" type="text" placeholder="Twoje imię"
+								name="">
+						</div>
+						<div class="form-group">
+							<input type="email" class="form-control form-control-lg" type="text"
+								placeholder="twój_email@email.com" name="email">
+						</div>
+						<div class="form-group">
+							<textarea class="form-control form-control-lg" type="text"
+								placeholder="Napisz wiadomość"></textarea>
+						</div>
+						<input type="submit" class="btn btn-secondary btn-block" value="wyślij" name="">
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+	<!-- pliki javascript -->
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src='js/main.js'></script>
+	<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+	<!--  light box js -->
+	<script src="js/lightbox-plus-jquery.min.js"> </script>
+</body>
+
+</html>

@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300&display=swap&subset=latin,latin-ext');
+
+body {
+	padding: 0;
+	margin: 0;
+	background: #f4f4f4;
+}
+
+html,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a {
+	font-family: 'Lato', sans-serif;
+}
+
+.navbar {
+	background: #2b2a27;
+}
+
+.nav-link,
+.navbar-brand {
+	color: #f4f4f4;
+	cursor: pointer;
+}
+
+.nav-link {
+	margin-right: 1em !important; 
+} 
+.nav-link:hover {
+	background: #f4f4f4;
+	color: #2b2a27;
+}
+
+.navbar-collapse {
+	justify-content: flex-end;
+}
+
+.navbar-toggler {
+	background-image: url('../images/hamburger.png');
+	background-repeat: no-repeat;
+}
+
+/*nagłówek- powitanie i logo*/
+.header {
+	position: relative;
+	background-image: url('../images/wizka-rekry.jpg');
+	background-size: cover;
+	background-position: center;
+}
+
+.overlay {
+	position: absolute;
+	min-height: 100%;
+	min-width: 100%;
+	left: 0;
+	top: 0;
+	background: rgba(244, 244, 244, 0.79);
+}
+
+.container {
+	position: relative;
+	top: 10%;
+	min-width: 100%;
+	padding: 1em;
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.description {
+	position: relative;
+	top: 10%;
+	margin: auto;
+	padding: 1em;
+	flex-grow: 1;
+}
+
+.description h2 {
+	color: #2b2a27;
+	text-align: center;
+}
+
+.description p {
+	color: #666;
+	font-size: 20px;
+	width: 100%;
+	line-height: 1.5;
+}
+
+.description button {
+	border: 1px solid #2b2a27;
+	background: #2b2a27;
+	color: #fff;
+}
+
+.logo {
+	position: relative;
+	top: 10%;
+	margin: auto;
+	padding: 1em;
+	flex-grow: 1;
+}
+
+/*o mnie*/
+.about {
+	margin: 4em 0;
+	padding: 1em;
+	position: relative;
+}
+
+.about h1 {
+	color: #2b2a27;
+	margin: 2em;
+}
+
+.about img {
+	width: 100%;
+	border-radius: 50%
+}
+
+.about span {
+	display: block;
+	color: #888;
+	position: absolute;
+	left: 115px;
+}
+
+.about .opis {
+	padding: 2em;
+	border-left: 4px solid #2b2a27;
+}
+
+.about .opis h3 {
+	color: #2b2a27;
+}
+
+.about .opis p {
+	line-height: 2;
+	color: #888;
+}
+
+/* Portfolio */
+.portfolio {
+	justify-content: center;
+}
+.siatka {
+	padding-top: 5em;
+}
+
+figure {
+	margin: 0 0 0rem;
+}
+
+.hover figure {
+	overflow: hidden;
+	position: relative;
+}
+
+.hover figure::before {
+	position: absolute;
+	top: 0;
+	left: -75%;
+	z-index: 2;
+	display: block;
+	content: '';
+	width: 50%;
+	height: 100%;
+	background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, .3) 100%);
+	background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, .3) 100%);
+	-webkit-transform: skewX(-17deg);
+	-moz-transform: skewX(-17deg);
+	-o-transform: skewX(-17deg);
+	-ms-transform: skewX(-17deg);
+	transform: skewX(-17deg);
+}
+
+.hover figure:hover::before {
+	-webkit-animation: shine .95s;
+	-moz-animation: shine .95s;
+	animation: shine .95s;
+}
+
+@keyframes shine {
+	100% {
+		left: 125%;
+	}
+}
+
+/* kontakt */
+.kontakt {
+	margin: 6em 0;
+	position: relative;
+}
+
+.kontakt .formularz {
+	display: flex;
+	justify-content: center;
+}
+
+.kontakt h1 {
+	padding: 2em 1px;
+	color: #2b2a27;
+}
+
+.kontakt .right .btn-secondary {
+	background: #2b2a27;
+	color: #fff;
+	border: 0;
+}
+
+.kontakt .right .form-control::placeholder {
+	color: #2b2a27;
+	font-size: 16px;
+
+}
